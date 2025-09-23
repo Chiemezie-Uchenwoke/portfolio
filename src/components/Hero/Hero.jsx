@@ -22,7 +22,7 @@ const Hero = () => {
                 Fullstack Developer skilled in building modern & responsive web solutions that delivers value and enhance user experience. I help businesses and organizations bring their ideas to life through innovative design and development.
             </p>
 
-            <div className="px-4 w-full flex flex-col min-[450px]:flex-row min-[450px]:justify-center gap-4 sm:gap-6 my-3">
+            <div className="px-4 w-full flex flex-col min-[450px]:flex-row min-[450px]:justify-center gap-4 sm:gap-6 my-2">
                 <a 
                     href="#"
                     className="bg-pri-blue text-white-shade py-3 lg:py-3.5 px-10 rounded-md font-semibold capitalize flex gap-2 items-center justify-center w-full text-center min-[450px]:w-fit hover:scale-105 duration-300 transition ease-in-out hover:bg-blue-600/90"
