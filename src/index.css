@@ -23,3 +23,19 @@
 html{
     @apply scroll-smooth
 }
+
+.contact-form-label{
+    @apply text-white-shade font-semibold capitalize
+}
+
+.contact-form-input{
+    @apply bg-blue-lite placeholder:text-lite-gray/60 placeholder:capitalize px-4 h-12 rounded-lg border border-white-shade/10 outline-0 focus:border focus:border-pri-blue
+}
+
+.email-input{
+    @apply bg-blue-lite placeholder:text-lite-gray/60 placeholder:lowercase px-4 h-12 rounded-lg border border-white-shade/10 outline-0 focus:border focus:border-pri-blue
+}
+
+.contact-textarea{
+    @apply bg-blue-lite placeholder:text-lite-gray/60 py-2 px-4 h-40 rounded-lg border border-white-shade/10 outline-0 overflow-auto text-white-shade/60 focus:border focus:border-pri-blue
+} 
