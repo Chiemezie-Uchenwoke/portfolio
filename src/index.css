@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --font-inter: "Inter", sans-serif;
+    --color-pri-blue: #3b82f6;
+    --color-blue-lite: #3b82f633;
+    --color-white-shade: #f8f8f8;
+    --color-lite-gray: #d1d5db;
+    --color-dark-gray: #9ca3af;
+    --color-main-dark-bg: #0a0a0a;
+    --color-dark-bg: #1a1a1a;
+    --color-dark-lite: #111827;
+}
+
+/* html{
+  scroll-padding-top: 4rem;
+} */
