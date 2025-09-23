@@ -53,7 +53,7 @@ const Contact = () => {
                 </div>
 
                 <button 
-                    className="flex items-center gap-2 bg-pri-blue py-3 justify-center rounded-lg text-white-shade font-semibold tracking-wide lg:text-lg"
+                    className="flex items-center gap-2 bg-pri-blue py-3 justify-center rounded-lg text-white-shade font-semibold tracking-wide lg:text-lg hover:bg-blue-600/80 duration-200 cursor-pointer"
                 >
                     <BsCursorFill />
                     Send Message
