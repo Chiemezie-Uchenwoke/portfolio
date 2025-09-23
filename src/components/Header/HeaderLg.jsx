@@ -14,9 +14,17 @@ const HeaderLg = () => {
                 </nav>
 
                 <div className="flex gap-4">
-                    <a href="#"> <FaGithub className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> </a>
-                    <a href="#"> <FaLinkedin className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> </a>
-                    <a href="#"> <IoMdMail className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> </a>
+                    <a href="https://github.com/Chiemezie-Uchenwoke" target="_blank"> 
+                        <FaGithub className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> 
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/chiemezieuche/" target="_blank"> 
+                        <FaLinkedin className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> 
+                    </a>
+
+                    <a href="mailto:uchenwoke.chiemezie@gmail.com" target="_blank"> 
+                        <IoMdMail className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> 
+                    </a>
                 </div>
             </div>
         </header>
