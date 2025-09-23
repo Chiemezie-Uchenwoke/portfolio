@@ -3,19 +3,20 @@ import { IoMdMail } from "react-icons/io";
 
 const HeaderLg = () => {
     return (
-        <header className="">
-            <div>
-                <h1>Chiemezie</h1>
+        <header className="w-full border-b border-lite-gray/20 h-16 hidden lg:flex items-center sticky top-0">
+            <div className="container h-full flex justify-between items-center">
+                <h1 className="text-pri-blue font-bold text-2xl">Chiemezie</h1>
 
-                <nav>
-                    <a href="#">projects</a>
-                    <a href="#">contact</a>
+                <nav className="flex gap-8">
+                    <a href="#" className="text-white capitalize hover:text-pri-blue duration-100">about</a>
+                    <a href="#" className="text-white capitalize hover:text-pri-blue duration-100">contact</a>
+                    <a href="#" className="text-white capitalize hover:text-pri-blue duration-100">contact</a>
                 </nav>
 
-                <div>
-                    <a href="#"> <FaGithub /> </a>
-                    <a href="#"> <FaLinkedin /> </a>
-                    <a href="#"> <IoMdMail /> </a>
+                <div className="flex gap-4">
+                    <a href="#"> <FaGithub className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> </a>
+                    <a href="#"> <FaLinkedin className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> </a>
+                    <a href="#"> <IoMdMail className="text-lite-gray/80 text-xl hover:text-pri-blue duration-100" /> </a>
                 </div>
             </div>
         </header>
