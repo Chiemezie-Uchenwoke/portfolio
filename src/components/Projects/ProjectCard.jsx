@@ -1,7 +1,7 @@
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaHourglassHalf } from "react-icons/fa";
 
-const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, codeUrl}) => {
+const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, codeUrl, isLive}) => {
     return (
         <div className="rounded-lg overflow-hidden h-full bg-dark-bg flex flex-col border border-white-shade/10 hover:border-pri-blue hover:scale-105 duration-200 ease-in-out">
             <div className="h-auto overflow-hidden">
@@ -13,7 +13,7 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                     {title}
                 </h3>
 
-                <p className="text-lite-gray/90 text-sm lg:text-base ">
+                <p className="text-lite-gray/80 text-sm lg:text-base ">
                     {description}
                 </p>
 
@@ -23,7 +23,7 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                             return (
                                 <span 
                                     key={index} 
-                                    className="bg-blue-lite text-pri-blue text-xs py-1 px-3 whitespace-nowrap rounded-full"
+                                    className="bg-blue-lite text-pri-blue text-xs py-1 px-3 whitespace-nowrap rounded-full capitalize"
                                 > 
                                     {t} 
                                 </span>
@@ -33,23 +33,29 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                 </div>
 
                 <div className="flex gap-6">
-                    <a 
-                        href={liveUrl}
-                        className="text-pri-blue flex items-center gap-2 font-bold cursor-pointer hover:text-blue-500/80 group"
-                        target="_blank"
-                    > 
-                        <LuSquareArrowOutUpRight className="text-pri-blue text-xl duration-200 group-hover:text-blue-500/80" /> 
-                        Live 
-                    </a>
+                    {
+                        isLive ? 
+                        <>
+                            <a 
+                                href={liveUrl}
+                                className="text-pri-blue flex items-center gap-2 font-bold cursor-pointer hover:text-blue-500/80 group"
+                                target="_blank"
+                            > 
+                                <LuSquareArrowOutUpRight className="text-pri-blue text-xl duration-200 group-hover:text-blue-500/80" /> 
+                                Live 
+                            </a>
 
-                    <a 
-                        href={codeUrl}
-                        className="text-pri-blue flex items-center gap-2 font-bold cursor-pointer hover:text-blue-500/80 group"
-                        target="_blank"
-                    > 
-                        <FaGithub className="text-pri-blue hover:text-blue-600 duration-200 group-hover:text-blue-500/80" /> 
-                        code 
-                    </a>
+                            <a 
+                                href={codeUrl}
+                                className="text-pri-blue flex items-center gap-2 font-bold cursor-pointer hover:text-blue-500/80 group"
+                                target="_blank"
+                            > 
+                                <FaGithub className="text-pri-blue hover:text-blue-600 duration-200 group-hover:text-blue-500/80" /> 
+                                code 
+                            </a>
+                        </> : 
+                            <span className="text-pri-blue font-bold flex items-center gap-2"><FaHourglassHalf /> Coming Soon</span>
+                    }
                 </div>
             </div>
         </div>
