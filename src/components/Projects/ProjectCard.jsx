@@ -17,7 +17,7 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                     {description}
                 </p>
 
-                <div className="flex gap-2 flex-wrap">
+                <div className="flex gap-2 flex-wrap my-1">
                     {
                         tools.map((t, index) => {
                             return (
