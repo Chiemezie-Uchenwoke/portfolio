@@ -15,3 +15,7 @@
 /* html{
   scroll-padding-top: 4rem;
 } */
+
+.container{
+    @apply w-[95%] mx-auto min-[1000px]:w-[90%] 2xl:w-[70%]
+}
