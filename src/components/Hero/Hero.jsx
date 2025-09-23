@@ -3,7 +3,7 @@ import { FaDownload } from "react-icons/fa6";
 
 const Hero = () => {
     return (
-        <section className="w-full flex flex-col gap-6 lg:gap-8 items-center min-h-[calc(100vh-4rem)] py-12 border-b border-white-shade/7">
+        <section className="w-full flex flex-col gap-6 lg:gap-8 items-center py-12 border-b border-white-shade/7">
             <div className="border-3 md:border-4 border-pri-blue w-48 h-48 rounded-full overflow-hidden bg-white-shade/10">
                 <img 
                     src={chiemeziePicture} 

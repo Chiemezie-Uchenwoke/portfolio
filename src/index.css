@@ -20,4 +20,6 @@
     @apply w-[95%] mx-auto min-[1000px]:w-[92%] 2xl:w-[70%]
 }
 
-
+html{
+    @apply scroll-smooth
+}
