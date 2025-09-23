@@ -7,7 +7,7 @@ const HeaderSm = () => {
     const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
 
     return (
-        <header className="w-full border-b border-lite-gray/20 h-16 flex lg:hidden items-center sticky top-0">
+        <header className="w-full border-b border-lite-gray/20 h-16 flex lg:hidden items-center sticky top-0 z-50 bg-main-dark-bg">
             <div className="h-full w-full flex justify-between items-center px-4 relative">
                 <h1 className="text-pri-blue font-bold text-lg">Chiemezie</h1>
 
