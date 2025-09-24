@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+import { IoMdMail, IoMdClose } from "react-icons/io";
 import { LuMenu } from "react-icons/lu";
 
 const HeaderSm = () => {
@@ -16,7 +16,10 @@ const HeaderSm = () => {
                         className="border border-white-shade/30 p-1.5 rounded"
                         onClick={() => setIsMobileMenuVisible(prev => !prev)}
                     > 
-                        <LuMenu className="text-white/70 text-lg" /> 
+                        {
+                            isMobileMenuVisible ? 
+                            <IoMdClose className="text-white/70 text-lg" /> : <LuMenu className="text-white/70 text-lg" />
+                        }
                     </button>
 
                     {
