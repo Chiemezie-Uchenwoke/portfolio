@@ -6,9 +6,7 @@ const MyServices = () => {
     return (
         <section 
             className="w-full mt-20 py-18 flex flex-col items-center gap-10 md:gap-12 bg-dark-lite"
-            /* style={{
-                backgroundImage: "linear-gradient(to bottom, #0a0a0a, #111827)",
-            }} */
+            id="services"
         >
             <SectionIntro 
                 heading="My Services"

@@ -29,8 +29,8 @@ const HeaderSm = () => {
                         >
                             <ul className="flex flex-col gap-4">
                                 <li><a href="#" className="text-white capitalize hover:text-pri-blue duration-100">about</a></li>
-                                <li><a href="#" className="text-white capitalize hover:text-pri-blue duration-100">contact</a></li>
-                                <li><a href="#" className="text-white capitalize hover:text-pri-blue duration-100">contact</a></li>
+                                <li><a href="#projects" className="text-white capitalize hover:text-pri-blue duration-100">projects</a></li>
+                                <li><a href="#contact" className="text-white capitalize hover:text-pri-blue duration-100">contact</a></li>
                             </ul>
 
                             <div className="flex gap-8">

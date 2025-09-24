@@ -9,8 +9,8 @@ const HeaderLg = () => {
 
                 <nav className="flex gap-8">
                     <a href="#" className="text-white capitalize hover:text-pri-blue duration-100">about</a>
-                    <a href="#" className="text-white capitalize hover:text-pri-blue duration-100">contact</a>
-                    <a href="#" className="text-white capitalize hover:text-pri-blue duration-100">contact</a>
+                    <a href="#projects" className="text-white capitalize hover:text-pri-blue duration-100">projects</a>
+                    <a href="#contact" className="text-white capitalize hover:text-pri-blue duration-100">contact</a>
                 </nav>
 
                 <div className="flex gap-4">

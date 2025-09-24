@@ -9,6 +9,7 @@ const Projects = () => {
             style={{
                 backgroundImage: "linear-gradient(to bottom, #0a0a0a, #111827)",
             }}
+            id="projects"
         >
             <div className="container flex flex-col items-center gap-10 md:gap-12">
                 <SectionIntro 
