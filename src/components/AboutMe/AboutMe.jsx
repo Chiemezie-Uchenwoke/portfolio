@@ -37,7 +37,7 @@ const AboutMe = () => {
                 <h2 className="capitalize text-white-shade font-bold sm:text-lg lg:text-xl">about me</h2>
                 <div className="text-white-shade/60 text-sm min-[900px]:text-base flex flex-col gap-4">
                     <p>
-                        I am a Fullstack Developer skilled in building responsive, user-centered web applications using technologies like Node.js, Express, React, and Tailwind CSS. I have a solid foundation in frontend development and a growing expertise in backend systems, RESTful API design, authentication, and database management. My journey has been shaped by a commitment to continuous learning and a drive to create clean, functional, and visually engaging web solutions.
+                        I am a Fullstack Developer skilled in building responsive, user-centered web applications using technologies like React, Tailwind CSS, Node.js and Express. I have a solid foundation in frontend development and a growing expertise in backend systems, RESTful API design, authentication, and database management. My journey has been shaped by a commitment to continuous learning and a drive to create clean, functional, and visually engaging web solutions.
                     </p>
 
                     <p>
