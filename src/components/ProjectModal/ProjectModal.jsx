@@ -1,20 +1,20 @@
-const ProjectModal = ({title, description, stack, features}) => {
+const ProjectModal = ({project}) => {
     return (
         <div className="">
             <div>
                 <h2>
-                    {title}
+                    {project.title}
                 </h2>
 
                 <p>
-                    {description}
+                    {project.description}
                 </p>
 
                 <div>
                     <h3>Tech Stack</h3>
                     <p>
                         {
-                            stack.map((s, i) => {
+                            project.stack.map((s, i) => {
                                 return (
                                     <span key={i}>
                                         {s}
@@ -30,7 +30,7 @@ const ProjectModal = ({title, description, stack, features}) => {
                     <ul>
 
                         {
-                            features.map((f, i) => {
+                            project.features.map((f, i) => {
                                 return (
                                     <li key={i}>
                                         {f}
