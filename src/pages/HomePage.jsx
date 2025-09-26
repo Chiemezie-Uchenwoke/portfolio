@@ -10,8 +10,8 @@ import Footer from "../components/Footer/Footer";
 const HomePage = () => {
     return (
         <>
-            <HeaderLg />
-            <HeaderSm />
+            <HeaderLg isHomePage="true" />
+            <HeaderSm isHomePage="true" />
             <Hero />
             <MyServices />
             <MySkills />
