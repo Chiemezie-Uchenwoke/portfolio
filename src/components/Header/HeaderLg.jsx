@@ -1,12 +1,19 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 
 const HeaderLg = ({isHomePage}) => {
+    const navigate = useNavigate();
+
     return (
         <header className="w-full border-b border-lite-gray/20 h-16 hidden lg:flex items-center sticky top-0 z-50 bg-main-dark-bg">
             <div className="container h-full flex justify-between items-center">
-                <h1 className="text-pri-blue font-bold text-2xl">Chiemezie</h1>
+                <h1 
+                    className="text-pri-blue font-bold text-2xl cursor-pointer"
+                    onClick={() => navigate("/")}
+                >
+                    Chiemezie
+                </h1>
 
                 <nav className="flex gap-8">
                     <NavLink 

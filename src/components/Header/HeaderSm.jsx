@@ -2,15 +2,19 @@ import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail, IoMdClose } from "react-icons/io";
 import { LuMenu } from "react-icons/lu";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 
 const HeaderSm = ({isHomePage}) => {
     const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <header className="w-full border-b border-lite-gray/20 h-16 flex lg:hidden items-center sticky top-0 z-50 bg-main-dark-bg">
             <div className="h-full w-full flex justify-between items-center px-4 relative">
-                <h1 className="text-pri-blue font-bold text-lg">Chiemezie</h1>
+                <h1 
+                    className="text-pri-blue font-bold text-lg"
+                    onClick={() => navigate("/")}
+                >Chiemezie</h1>
 
                 <div>
                     <button 
