@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import { Link } from "react-router";
 
 const HeaderLg = () => {
     return (
@@ -8,7 +9,8 @@ const HeaderLg = () => {
                 <h1 className="text-pri-blue font-bold text-2xl">Chiemezie</h1>
 
                 <nav className="flex gap-8">
-                    <a href="#" className="text-white capitalize hover:text-pri-blue duration-100">about</a>
+                    <Link to="/" className="text-white capitalize hover:text-pri-blue duration-100">home</Link>
+                    <Link to="/about" className="text-white capitalize hover:text-pri-blue duration-100">about</Link>
                     <a href="#projects" className="text-white capitalize hover:text-pri-blue duration-100">projects</a>
                     <a href="#contact" className="text-white capitalize hover:text-pri-blue duration-100">contact</a>
                 </nav>

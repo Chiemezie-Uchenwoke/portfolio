@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoMdMail, IoMdClose } from "react-icons/io";
 import { LuMenu } from "react-icons/lu";
+import { Link } from "react-router";
 
 const HeaderSm = () => {
     const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
@@ -28,7 +29,8 @@ const HeaderSm = () => {
                             className="absolute left-0 top-full px-4 flex flex-col gap-8 justify-center items-center bg-dark-bg w-full max-w-[15rem] h-[calc(100vh-4rem)] py-12 border-r border-white-shade/5 shadow-lg"
                         >
                             <ul className="flex flex-col gap-4">
-                                <li><a href="#" className="text-white capitalize hover:text-pri-blue duration-100">about</a></li>
+                                <li><Link to="/" className="text-white capitalize hover:text-pri-blue duration-100">home</Link></li>
+                                <li><Link to="/about" className="text-white capitalize hover:text-pri-blue duration-100">about</Link></li>
                                 <li><a href="#projects" className="text-white capitalize hover:text-pri-blue duration-100">projects</a></li>
                                 <li><a href="#contact" className="text-white capitalize hover:text-pri-blue duration-100">contact</a></li>
                             </ul>
