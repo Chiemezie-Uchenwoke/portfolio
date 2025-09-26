@@ -45,7 +45,7 @@ const AboutMe = () => {
                         </p>
 
                         <p>
-                            Currently I am deepening my backend expertise by working with both PostgreSQL and MongoDB, designing optimized database schemas, writing efficient SQL and NoSQL queries, and building secure, scalable API connections between frontend interfaces and backend services.
+                            Currently, I am expanding my knowledge of backend development by working with PostgreSQL & MongoDB, designing database schemas, writing efficient queries, and connecting APIs securely between client and server. I enjoy applying what I learn directly into projects and solving real world problems. 
                         </p>
 
                         <p>
@@ -53,9 +53,13 @@ const AboutMe = () => {
                         </p>
                     </div>
 
-                    <button className="border border-white-shade/20 bg-white-shade/50 my-3 py-3 rounded-lg font-semibold cursor-pointer hover:bg-white-shade/65 duration-300 active:scale-95">
+                    <a 
+                        className="border border-white-shade/30 bg-white-shade/20 text-white-shade my-3 py-3 rounded-lg font-semibold cursor-pointer hover:bg-white-shade/25 duration-300 active:scale-95 text-center"
+                        href="/Chiemezie_Uchenwoke_CV.pdf"
+                        download
+                    >
                         Download CV
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
