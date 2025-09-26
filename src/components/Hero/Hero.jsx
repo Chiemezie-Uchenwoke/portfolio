@@ -1,5 +1,4 @@
 import chiemeziePicture from "../../assets/chiemezie-uche.png";
-import { FaDownload } from "react-icons/fa6";
 
 const Hero = () => {
     return (
@@ -27,7 +26,7 @@ const Hero = () => {
                     href="#"
                     className="bg-pri-blue text-white-shade py-3 lg:py-3.5 px-10 rounded-md font-semibold capitalize flex gap-2 items-center justify-center w-full text-center min-[450px]:w-fit hover:scale-105 duration-300 transition ease-in-out hover:bg-blue-600/90"
                 >
-                    <FaDownload className="animate-bounce" /> Download Cv
+                    Download Cv
                 </a>
 
                 <a 
