@@ -6,8 +6,8 @@ import Footer from "../components/Footer/Footer";
 const AboutPage = () => {
     return (
         <>
-            <HeaderLg />
-            <HeaderSm />
+            <HeaderLg isHomePage={false} />
+            <HeaderSm isHomePage={false} />
             <AboutMe />
             <Footer />
         </>
