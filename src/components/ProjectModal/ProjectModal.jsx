@@ -4,12 +4,25 @@ import { useEffect } from "react";
 const ProjectModal = ({project, onClose}) => {
 
     useEffect(() => {
+        const originalStyle = window.getComputedStyle(document.body).overflow;
         document.body.style.overflow = "hidden";
 
         return () => {
-            document.body.style.overflow = "auto";
+            // or use auto instead of original style
+            document.body.style.overflow = originalStyle;
         };
     }, []);
+
+    useEffect(() => {
+        const handleEsc = (e) => {
+            if (e.key === "Escape") onClose();
+        };
+
+        window.addEventListener("keydown", handleEsc);
+
+        return () => window.removeEventListener("keydown", handleEsc);
+    }, [onClose]);
+
 
     if (!project) return null;
 
