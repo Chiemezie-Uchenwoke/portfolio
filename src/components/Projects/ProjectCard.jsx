@@ -1,9 +1,9 @@
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import { FaGithub, FaHourglassHalf } from "react-icons/fa";
 
-const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, codeUrl, isLive}) => {
+const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, codeUrl, isLive, onClick}) => {
     return (
-        <div className="rounded-lg overflow-hidden h-full bg-dark-bg flex flex-col border border-white-shade/10 hover:border-pri-blue hover:scale-105 duration-200 ease-in-out">
+        <div className="rounded-lg overflow-hidden h-full bg-dark-bg flex flex-col border border-white-shade/10 hover:border-pri-blue hover:scale-105 duration-200 ease-in-out cursor-pointer" onClick={onClick}>
             <div className="h-auto overflow-hidden">
                 <img src={imgUrl} alt={imgAltText} className="w-full h-full max-w-full object-cover" />
             </div>
@@ -13,7 +13,7 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                     {title}
                 </h3>
 
-                <p className="text-lite-gray/80 text-sm lg:text-base ">
+                <p className="text-lite-gray/80 text-sm lg:text-base select-none">
                     {description}
                 </p>
 
@@ -40,6 +40,7 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                                 href={liveUrl}
                                 className="text-pri-blue flex items-center gap-2 font-bold cursor-pointer hover:text-blue-500/80 group"
                                 target="_blank"
+                                onClick={(e) => e.stopPropagation()}
                             > 
                                 <LuSquareArrowOutUpRight className="text-pri-blue text-xl duration-200 group-hover:text-blue-500/80" /> 
                                 Live 
@@ -49,6 +50,7 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                                 href={codeUrl}
                                 className="text-pri-blue flex items-center gap-2 font-bold cursor-pointer hover:text-blue-500/80 group"
                                 target="_blank"
+                                onClick={(e) => e.stopPropagation()}
                             > 
                                 <FaGithub className="text-pri-blue hover:text-blue-600 duration-200 group-hover:text-blue-500/80" /> 
                                 code 
