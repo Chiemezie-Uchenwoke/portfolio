@@ -6,7 +6,7 @@ const ProjectModal = ({project, onClose}) => {
     const {title, description, tools, features} = project;
 
     return (
-        <div className="fixed top-0 left-0 z-[70] bg-dark-bg/80 flex justify-center items-center w-full h-full shadow-2xl shadow-white-shade/10 backdrop-blur-sm">
+        <div className="fixed top-0 left-0 z-[70] bg-dark-bg/80 flex justify-center items-center w-full h-screen shadow-2xl shadow-white-shade/10 backdrop-blur-sm">
             <div className="bg-main-dark-bg w-[90%] max-w-[40rem] h-[75%] overflow-y-auto relative z-[75] rounded-lg py-8 px-6 lg:px-8 border border-white-shade/10 shadow-lg flex flex-col gap-6">
                 <button 
                     onClick={onClose}

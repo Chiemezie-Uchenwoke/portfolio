@@ -2,7 +2,7 @@ import { IoMdClose } from "react-icons/io";
 
 const FormNotification = ({title, message, onClose, isSuccess, isError}) => {
     return (
-        <div className="fixed top-0 left-0 z-[70] bg-dark-bg/60 flex justify-center items-center w-full h-full">
+        <div className="fixed top-0 left-0 z-[70] bg-dark-bg/60 flex justify-center items-center w-full h-screen">
             <div className={`bg-main-dark-bg w-[90%] max-w-100 relative z-[75] rounded-lg py-8 px-4 border shadow-lg flex flex-col gap-4`}>
                
                 <button 
