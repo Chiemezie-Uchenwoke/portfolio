@@ -17,7 +17,7 @@ const ProjectModal = ({project, onClose}) => {
 
     return (
         <div className="fixed top-0 left-0 z-[70] bg-dark-bg/80 flex justify-center items-center w-full h-screen shadow-2xl shadow-white-shade/10 backdrop-blur-sm">
-            <div className="bg-main-dark-bg w-[90%] max-w-[40rem] h-[75%] overflow-y-auto relative z-[75] rounded-lg  border border-white-shade/10 shadow-lg">
+            <div className="bg-main-dark-bg w-[90%] max-w-[40rem] h-[80%] overflow-y-auto relative z-[75] rounded-lg  border border-white-shade/10 shadow-lg">
                 <div className="w-full h-12 flex justify-end items-center border-b border-white-shade/10 py-2 px-4 lg:px-6">
                     <button 
                         onClick={onClose}
@@ -27,7 +27,7 @@ const ProjectModal = ({project, onClose}) => {
                     </button>
                 </div>
 
-                <div className="h-[calc(100%-3rem)] overflow-y-auto flex flex-col gap-6 py-6 px-6 lg:px-8">
+                <div className="h-[calc(100%-5.5rem)] flex flex-col gap-6 py-6 px-6 lg:px-8 overflow-y-auto">
                     <h2 className="text-white font-bold capitalize text-lg lg:text-xl ">
                         {title}
                     </h2>
@@ -66,6 +66,11 @@ const ProjectModal = ({project, onClose}) => {
                             }
                         </ul>
                     </div>
+                    
+                </div>
+
+                <div className="h-10 border-t border-white-shade/10">
+                        
                 </div>
             </div>
         </div>
