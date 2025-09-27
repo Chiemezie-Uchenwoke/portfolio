@@ -4,9 +4,9 @@ import { CiUser } from "react-icons/ci";
 const AboutMe = () => {
     return (
         <div 
-            className="container flex flex-col md:flex-row gap-8 mt-8"
+            className="container flex flex-col md:flex-row gap-8 mt-8 min-h-[calc(75vh-4rem)]"
         >
-            <div className="border border-white-shade/15 rounded-lg w-full md:w-[17rem] flex flex-col gap-3.5 py-6 px-4 h-auto">
+            <div className="border border-white-shade/15 rounded-lg w-full md:w-[17rem] flex flex-col gap-3.5 py-6 px-4 h-fit">
                 <div className="w-48 h-48 rounded-full overflow-hidden bg-dark-gray/10">
                     <img 
                         src={myPic} 

@@ -9,7 +9,7 @@ const AboutPage = () => {
             <HeaderLg isHomePage={false} />
             <HeaderSm isHomePage={false} />
             <AboutMe />
-            <Footer />
+            <Footer />            
         </>
     )
 }
