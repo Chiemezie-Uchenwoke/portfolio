@@ -39,11 +39,11 @@ const Contact = () => {
         }
 
         emailjs
-            .send(
+            .sendForm(
                 "service_ubq3uy4", // service_id
                 "template_iu3a5ph", // template_id
-                formData,
-                "uvAl1RUzEcKDa5kee" // public_key
+                formRef,
+                {publicKey: "uvAl1RUzEcKDa5kee"} // public_key
             )
             .then(
                 () => {
@@ -66,7 +66,7 @@ const Contact = () => {
                     console.error(error);
                     setNotificationData({
                         title: "Error!",
-                        message: `Oops, something went wrong: ${error.text || "Try again"}`,
+                        message: "Oops, something went wrong. Try again",
                         isSuccess: false,
                         isError: true
                     });
