@@ -1,9 +1,11 @@
 import SectionIntro from "../SectionIntro/SectionIntro";
 import { BsCursorFill } from "react-icons/bs";
 import FormNotification from "../FormNotification/FormNotification";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+    const formRef = useRef();
     const [showNotification, setShowNotification] = useState(false);
     const [formData, setFormData] = useState({
         fullname: "",
@@ -33,14 +35,41 @@ const Contact = () => {
             return;
         }
 
-        setNotificationData({
-            title: "Success!",
-            message: "Message sent successfully.",
-            isSuccess: true,
-            isError: false
-        });
+        emailjs
+            .sendForm(
+                "service_ubq3uy4", // service_id
+                "template_iu3a5ph", // template_id
+                formRef.current,
+                "uvAl1RUzEcKDa5kee" // public_key
+            )
+            .then(
+                () => {
+                    setNotificationData({
+                        title: "Success!",
+                        message: "Your message was sent successfully. I'll be in touch soon.",
+                        isSuccess: true,
+                        isError: false
+                    });
 
-        setShowNotification(true);
+                    setShowNotification(true);
+                    setFormData({
+                        fullname: "",
+                        email: "",
+                        subject: "",
+                        message: ""
+                    });
+                },
+                (error) => {
+                    console.error(error);
+                    setNotificationData({
+                        title: "Error!",
+                        message: "Oops, something went wrong. Try again",
+                        isSuccess: false,
+                        isError: true
+                    });
+                    setShowNotification(true);
+                }
+            );
     }
 
     return (
@@ -51,6 +80,7 @@ const Contact = () => {
             />
             
             <form 
+                ref={formRef}
                 className="w-full max-w-[35rem] lg:max-w-[52rem] mx-auto bg-dark-bg border border-white-shade/10 rounded-lg py-8 px-4 lg:px-6 flex flex-col gap-8"
                 onSubmit={handleSubmit}
             >
@@ -67,6 +97,7 @@ const Contact = () => {
                             type="text" 
                             placeholder="your name" 
                             className="contact-form-input"
+                            name="fullname"
                             value={formData.fullname}
                             onChange={(e) => setFormData({...formData, fullname: e.target.value})}
                         />
@@ -78,6 +109,7 @@ const Contact = () => {
                             type="email" 
                             placeholder="example@email.com"
                             className="email-input" 
+                            name="email"
                             value={formData.email}
                             onChange={(e) => setFormData({...formData, email: e.target.value})}
                         />
@@ -90,6 +122,7 @@ const Contact = () => {
                         type="text" 
                         placeholder="project inquiry" 
                         className="contact-form-input" 
+                        name="subject"
                         value={formData.subject}
                         onChange={(e) => setFormData({...formData, subject: e.target.value})}
                     />
