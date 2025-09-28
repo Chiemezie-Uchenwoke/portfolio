@@ -42,7 +42,7 @@ const Contact = () => {
             .sendForm(
                 "service_ubq3uy4", // service_id
                 "template_iu3a5ph", // template_id
-                formRef,
+                formRef.current,
                 {publicKey: "uvAl1RUzEcKDa5kee"} // public_key
             )
             .then(
