@@ -19,9 +19,11 @@ const Contact = () => {
         isSuccess: false,
         isError: false
     });
+    const [isSending, setIsSending] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsSending(true);
 
         if (!formData.fullname || !formData.email || !formData.subject || !formData.message){
             setNotificationData({
@@ -32,14 +34,15 @@ const Contact = () => {
             });
 
             setShowNotification(true);
+            setIsSending(false);
             return;
         }
 
         emailjs
-            .sendForm(
+            .send(
                 "service_ubq3uy4", // service_id
                 "template_iu3a5ph", // template_id
-                formRef.current,
+                formData,
                 "uvAl1RUzEcKDa5kee" // public_key
             )
             .then(
@@ -63,13 +66,14 @@ const Contact = () => {
                     console.error(error);
                     setNotificationData({
                         title: "Error!",
-                        message: "Oops, something went wrong. Try again",
+                        message: `Oops, something went wrong: ${error.text || "Try again"}`,
                         isSuccess: false,
                         isError: true
                     });
                     setShowNotification(true);
                 }
-            );
+            )
+            .finally(() => setIsSending(false));
     }
 
     return (
@@ -142,9 +146,10 @@ const Contact = () => {
                 <button 
                     type="submit"
                     className="flex items-center gap-2 bg-pri-blue py-3 justify-center rounded-lg text-white-shade font-semibold tracking-wide lg:text-lg hover:bg-blue-600/80 duration-200 cursor-pointer active:scale-95"
+                    disabled={isSending}
                 >
                     <BsCursorFill />
-                    Send Message
+                    {isSending ? "Sending..." : "Send Message"}
                 </button>
 
             </form>
