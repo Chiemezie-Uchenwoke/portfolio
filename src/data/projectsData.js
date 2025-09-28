@@ -1,6 +1,9 @@
 import spendwise from "../assets/spendwise.png";
 import quizApp from "../assets/quiz.png";
 import maxstores from "../assets/max-stores.jpg";
+import qr from "../assets/qr.png";
+import cleanX from "../assets/cleanXpace.jpg";
+import visionedge from "../assets/visionedge.png";
 
 const projectsData = [
     {
@@ -55,6 +58,54 @@ const projectsData = [
             "Responsive Design: The platform adapts to various devices, ensuring a smooth shopping experience.",
             "Dynamic Updates: Leveraging React's state management to dynamically update the cart.",
             "User authentication with Firebase"
+        ]
+    },
+    {
+        id: 4,
+        imgUrl: qr,
+        imgAltText: "QR Code Generator Image",
+        title: "QR Code Generator",
+        description: "A simple yet powerful web application built with Node and Express. It allows users to generate QR codes for websites and phone numbers effortlessly.",
+        tools: ["Node.JS", "Express.JS", "JavaScript", "CSS", "HTML"],
+        liveUrl: "https://qr-code-generator-six-omega.vercel.app/",
+        codeUrl: "https://github.com/Chiemezie-Uchenwoke/qrcodegenerator",
+        isLive: true,
+        features: [
+            "Generate QR codes for URLs and phone numbers",
+            "Download and save QR codes as images",
+            "Clean and responsive user interface"
+        ]
+    },
+    {
+        id: 5,
+        imgUrl: cleanX,
+        imgAltText: "CleanXpace Solutions Image",
+        title: "CleanXpace Solutions",
+        description: "A modern cleaning agency website featuring an intuitive booking system for scheduling cleanings and a contact form for customer inquiries",
+        tools: ["JavaScript", "CSS", "HTML"],
+        liveUrl: "https://cleanxpace.vercel.app/",
+        codeUrl: "https://github.com/Chiemezie-Uchenwoke/cleanxpace",
+        isLive: true,
+        features: [
+            "Intuitive booking system",
+            "Integrated contact form",
+            "Mobile-first responsive design"
+        ]
+    },
+    {
+        id: 6,
+        imgUrl: visionedge,
+        imgAltText: "vision edge Image",
+        title: "vision edge",
+        description: "VisionEdge is a modern and responsive one-page corporate website built with Tailwind CSS and JavaScript.",
+        tools: ["JavaScript", "Tailwind CSS", "HTML"],
+        liveUrl: "https://vision-edge.vercel.app/",
+        codeUrl: "https://github.com/Chiemezie-Uchenwoke/vision_edge",
+        isLive: true,
+        features: [
+            "Responsive design: Optimized for desktops, tablets, and mobile devices",  
+            "Built with Tailwind CSS: Utility-first framework for fast, modern UI development",  
+            "Interactive user interaction"
         ]
     },
 ];

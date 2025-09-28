@@ -9,7 +9,7 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
             </div>
 
             <div className="px-4 lg:px-6 flex flex-col gap-4 py-6">
-                <h3 className="text-white-shade font-bold text-lg tracking-wide">
+                <h3 className="text-white-shade font-bold text-lg tracking-wide capitalize">
                     {title}
                 </h3>
 
