@@ -31,7 +31,7 @@ const Hero = () => {
                 </a>
 
                 <a 
-                    href="#"
+                    href="#projects"
                     className="border border-pri-blue text-pri-blue rounded-md font-semibold capitalize inline-block w-full text-center py-3 lg:py-3.5 px-10 min-[450px]:w-fit transition hover:bg-pri-blue hover:text-white-shade duration-300"
                 >
                     view my work
