@@ -2,8 +2,8 @@ import spendwise from "../assets/spendwise.png";
 import quizApp from "../assets/quiz.png";
 import maxstores from "../assets/max-stores.jpg";
 import qr from "../assets/qr.png";
-import cleanX from "../assets/cleanXpace.jpg";
 import visionedge from "../assets/visionedge.png";
+import taskflow from "../assets/taskflow.png";
 
 const projectsData = [
     {
@@ -78,18 +78,21 @@ const projectsData = [
     },
     {
         id: 5,
-        imgUrl: cleanX,
-        imgAltText: "CleanXpace Solutions Image",
-        title: "CleanXpace Solutions",
-        description: "A modern cleaning agency website featuring an intuitive booking system for scheduling cleanings and a contact form for customer inquiries",
-        tools: ["JavaScript", "CSS", "HTML"],
-        liveUrl: "https://cleanxpace.vercel.app/",
-        codeUrl: "https://github.com/Chiemezie-Uchenwoke/cleanxpace",
-        isLive: true,
+        imgUrl: taskflow,
+        imgAltText: "Taskflow Image",
+        title: "Taskflow",
+        description: "TaskFlow is a modern SaaS landing page and demo application built with React and Tailwind CSS. It showcases my ability to design and implement a responsive, professional frontend for a SaaS product.",
+        tools: ["React", "Tailwind CSS", "Framer Motion"],
+        liveUrl: "https://taskflow-saas-dev.vercel.app/",
+        codeUrl: "https://github.com/Chiemezie-Uchenwoke/taskflow",
+        isLive: false,
         features: [
-            "Intuitive booking system",
-            "Integrated contact form",
-            "Mobile-first responsive design"
+            "Hero Section: Engaging introduction with clear call-to-action.",
+            "Features Section: Highlights key product benefits.",
+            "Pricing Section: Simple, transparent pricing plans.",
+            "Testimonials Section: Social proof with user feedback.",
+            "Responsive Design: Optimized for all devices.",
+            "Animations: Smooth effects powered by Framer Motion."
         ]
     },
     {
