@@ -77,7 +77,7 @@ const Contact = () => {
     }
 
     return (
-        <section className="mt-20 container flex flex-col gap-12" id="contact">
+        <section className="mt-16 container flex flex-col gap-12" id="contact">
             <SectionIntro 
                 heading="get in touch"
                 subtitle="Ready to start your next project? Let's work together!"

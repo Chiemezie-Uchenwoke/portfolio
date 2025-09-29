@@ -13,7 +13,7 @@ const MyServices = () => {
                 subtitle="What I can do for you"
             />
 
-            <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
                 {
                     servicesData.map(s => {
                         return (
