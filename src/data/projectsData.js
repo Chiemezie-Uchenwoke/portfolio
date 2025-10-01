@@ -28,6 +28,25 @@ const projectsData = [
     },
     {
         id: 2,
+        imgUrl: taskflow,
+        imgAltText: "Taskflow Image",
+        title: "Taskflow",
+        description: "TaskFlow is a modern SaaS landing page and demo application built with React and Tailwind CSS. It showcases my ability to design and implement a responsive, professional frontend for a SaaS product.",
+        tools: ["React", "Tailwind CSS", "Framer Motion"],
+        liveUrl: "https://taskflow-saas-dev.vercel.app/",
+        codeUrl: "https://github.com/Chiemezie-Uchenwoke/taskflow",
+        isLive: false,
+        features: [
+            "Hero Section: Engaging introduction with clear call-to-action.",
+            "Features Section: Highlights key product benefits.",
+            "Pricing Section: Simple, transparent pricing plans.",
+            "Testimonials Section: Social proof with user feedback.",
+            "Responsive Design: Optimized for all devices.",
+            "Animations: Smooth effects powered by Framer Motion."
+        ]
+    },
+    {
+        id: 3,
         imgUrl: quizApp,
         imgAltText: "JavaScript Quiz App Image",
         title: "Interactive Quiz App",
@@ -43,7 +62,7 @@ const projectsData = [
 
     },
     {
-        id: 3,
+        id: 4,
         imgUrl: maxstores,
         imgAltText: "Max-Stores Ecommerce App Image",
         title: "Max-Stores",
@@ -61,7 +80,7 @@ const projectsData = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         imgUrl: qr,
         imgAltText: "QR Code Generator Image",
         title: "QR Code Generator",
@@ -74,25 +93,6 @@ const projectsData = [
             "Generate QR codes for URLs and phone numbers",
             "Download and save QR codes as images",
             "Clean and responsive user interface"
-        ]
-    },
-    {
-        id: 5,
-        imgUrl: taskflow,
-        imgAltText: "Taskflow Image",
-        title: "Taskflow",
-        description: "TaskFlow is a modern SaaS landing page and demo application built with React and Tailwind CSS. It showcases my ability to design and implement a responsive, professional frontend for a SaaS product.",
-        tools: ["React", "Tailwind CSS", "Framer Motion"],
-        liveUrl: "https://taskflow-saas-dev.vercel.app/",
-        codeUrl: "https://github.com/Chiemezie-Uchenwoke/taskflow",
-        isLive: false,
-        features: [
-            "Hero Section: Engaging introduction with clear call-to-action.",
-            "Features Section: Highlights key product benefits.",
-            "Pricing Section: Simple, transparent pricing plans.",
-            "Testimonials Section: Social proof with user feedback.",
-            "Responsive Design: Optimized for all devices.",
-            "Animations: Smooth effects powered by Framer Motion."
         ]
     },
     {
