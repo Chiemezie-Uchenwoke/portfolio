@@ -35,7 +35,7 @@ const projectsData = [
         tools: ["React", "Tailwind CSS", "Framer Motion"],
         liveUrl: "https://taskflow-saas-dev.vercel.app/",
         codeUrl: "https://github.com/Chiemezie-Uchenwoke/taskflow",
-        isLive: false,
+        isLive: true,
         features: [
             "Hero Section: Engaging introduction with clear call-to-action.",
             "Features Section: Highlights key product benefits.",
