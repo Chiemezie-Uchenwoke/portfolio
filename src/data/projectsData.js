@@ -13,9 +13,9 @@ const projectsData = [
         title: "SpendWise App",
         description: "SpendWise is a modern finance tracking web application that helps users manage their personal finances with ease.",
         tools: ["React", "Tailwind CSS", "Node.JS", "Express.JS", "MongoDB"],
-        liveUrl: "#",
-        codeUrl: "#",
-        isLive: false,
+        liveUrl: "https://spendwise-nu.vercel.app/",
+        codeUrl: "https://github.com/Chiemezie-Uchenwoke/spendwise",
+        isLive: true,
         features: [
             "User authentication",
             "Add, edit, delete transactions",
