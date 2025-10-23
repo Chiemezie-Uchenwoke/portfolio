@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import { motion } from "framer-motion";
+import { motion } from "motion/react"
 
 const ScrollToTop = () => {
     const [isScrollToTopVisible, setIsScrollToTopVisible] = useState(false);

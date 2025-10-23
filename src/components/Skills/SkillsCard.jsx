@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react"
 
 const SkillsCard = ({ icon: Icon, skillName, index }) => {
     return (
