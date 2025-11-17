@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
-import { motion } from "motion/react"
+import { motion } from "motion/react" // eslint-disable-line no-unused-vars
 
 const ScrollToTop = () => {
     const [isScrollToTopVisible, setIsScrollToTopVisible] = useState(false);

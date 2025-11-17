@@ -1,4 +1,5 @@
 import chiemeziePicture from "../../assets/chiemezie-uche.png";
+import { motion } from "motion/react" // eslint-disable-line no-unused-vars
 
 const Hero = () => {
     return (
@@ -11,15 +12,23 @@ const Hero = () => {
                 />
             </div>
 
-            <h2 
+            <motion.h2 
                 className="text-white-shade capitalize font-extrabold text-2xl sm:text-3xl lg:text-5xl tracking-wide"
+                initial={{opacity: 0, y: 20}}
+                animate={{opacity: 1, y: 0}}
+                transition={{duration: 0.6, ease: "easeOut"}}
             >
                 Chiemezie Uchenwoke
-            </h2>
+            </motion.h2>
 
-            <p className="text-lite-gray/90 w-[90%] max-w-[39rem] lg:max-w-[47rem] text-center text-sm sm:text-base lg:text-[1.25rem] leading-6 sm:leading-7 lg:leading-8 font-medium">
+            <motion.p 
+                className="text-lite-gray/90 w-[90%] max-w-[39rem] lg:max-w-[47rem] text-center text-sm sm:text-base lg:text-[1.25rem] leading-6 sm:leading-7 lg:leading-8 font-medium"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+            >
                 Fullstack Developer skilled in building modern & responsive web solutions that delivers value and enhance user experience. I help businesses and organizations bring their ideas to life through innovative design and development.
-            </p>
+            </motion.p>
 
             <div className="px-4 w-full flex flex-col min-[450px]:flex-row min-[450px]:justify-center gap-4 sm:gap-6 mt-2">
                 <a 

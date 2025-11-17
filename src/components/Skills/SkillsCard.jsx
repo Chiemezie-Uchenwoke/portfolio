@@ -1,4 +1,4 @@
-import { motion } from "motion/react"
+import { motion } from "motion/react"; // eslint-disable-line no-unused-vars
 
 const SkillsCard = ({ icon: Icon, skillName, index }) => {
     return (

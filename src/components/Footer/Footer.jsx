@@ -1,4 +1,6 @@
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="mt-20 w-full py-12 bg-dark-lite">
             <div className="container flex flex-col gap-3 items-center">
@@ -11,7 +13,7 @@ const Footer = () => {
                 </a>
 
                 <p className="text-white-shade/60 capitalize text-sm lg:text-base">
-                    © all rights reserved 2025
+                    © all rights reserved {currentYear}
                 </p>
             </div>
         </footer>
