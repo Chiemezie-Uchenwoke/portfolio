@@ -6,7 +6,7 @@ const AboutMe = () => {
         <div 
             className="container flex flex-col md:flex-row gap-8 mt-8 min-h-[calc(75vh-4rem)]"
         >
-            <div className="border border-white-shade/15 rounded-lg w-full md:w-[17rem] flex flex-col gap-3.5 py-6 px-4 h-fit">
+            <div className="border border-white-shade/15 rounded-lg w-full md:w-[17rem] flex flex-col items-center gap-3.5 py-6 px-4 h-fit">
                 <div className="w-48 h-48 rounded-full overflow-hidden bg-dark-gray/10">
                     <img 
                         src={myPic} 
@@ -37,15 +37,41 @@ const AboutMe = () => {
                 <h2 className="capitalize text-white-shade font-bold sm:text-lg lg:text-xl">about me</h2>
                 <div className="text-white-shade/60 text-sm min-[900px]:text-base flex flex-col gap-4">
                     <p>
-                        I am a Fullstack Developer skilled in building responsive, user-centered web applications using technologies like React, Tailwind CSS, Node.js and Express. I have a solid foundation in frontend development and a growing expertise in backend systems, RESTful API design, authentication, and database management. My journey has been shaped by a commitment to continuous learning and a drive to create clean, functional, and visually engaging web solutions.
+                        I am a Fullstack Developer skilled in building clean, responsive and user-centered web applications using technologies like React, Tailwind CSS, Node.js and Express. 
                     </p>
 
                     <p>
-                        Currently, I am expanding my knowledge of backend development by working with PostgreSQL & MongoDB, designing database schemas, writing efficient queries, and connecting APIs securely between client and server. I enjoy applying what I learn directly into projects and solving real world problems. 
+                        My journey into development has been shaped by consistent learning, curiosity, and a drive for excellence. I began with frontend development, building interfaces that focus on clarity, simplicity, and great user experience. Over time, I expanded into the backend, developing skills in:
+                    </p>
+
+                    <ul className="list-disc marker:text-white-shade/60 list-inside">
+                        <li className="">
+                            RESTful API design
+                        </li>
+
+                        <li className="">
+                            Authentication & authorization
+                        </li>
+
+                        <li className="">
+                            Database modeling
+                        </li>
+
+                        <li className="">
+                            Connecting and securing client-server communication
+                        </li>
+                    </ul>
+
+                    <p>
+                        Right now, I'm deepening my expertise in backend engineering, working with MongoDB and PostgreSQL, optimizing schemas, writing queries, and building secure, maintainable APIs. I enjoy applying what I learn directly into projects and solving real world problems. 
                     </p>
 
                     <p>
                         Beyond technical skills, I am deeply passionate about mentorship and knowledge-sharing. I believe in fostering collaborative environments and am committed to continuous growth, both as a developer and a professional.
+                    </p>
+
+                    <p>
+                        My goal is to build meaningful and robust products, grow continously and contribute positively wherever i find myself.
                     </p>
                 </div>
 
