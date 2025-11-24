@@ -18,7 +18,7 @@
 } */
 
 .container{
-    @apply w-[95%] mx-auto min-[1000px]:w-[92%] 2xl:w-[60%]
+    @apply w-[93%] mx-auto min-[1000px]:w-[92%] 2xl:w-[60%]
 }
 
 html{

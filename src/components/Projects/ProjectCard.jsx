@@ -3,7 +3,7 @@ import { FaGithub, FaHourglassHalf } from "react-icons/fa";
 
 const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, codeUrl, isLive, onClick}) => {
     return (
-        <div className="rounded-lg overflow-hidden h-full bg-dark-bg flex flex-col border border-white-shade/10 hover:border-pri-blue hover:scale-105 duration-200 ease-in-out cursor-pointer" onClick={onClick}>
+        <div className="rounded-lg overflow-hidden h-full bg-dark-bg flex flex-col border border-white-shade/10 hover:border-pri-blue hover:scale-103 duration-200 ease-in-out cursor-pointer" onClick={onClick}>
             <div className="h-auto overflow-hidden">
                 <img src={imgUrl} alt={imgAltText} className="w-full h-full max-w-full object-cover" />
             </div>
