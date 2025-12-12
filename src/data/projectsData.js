@@ -1,6 +1,6 @@
 import spendwise from "../assets/spendwise.png";
 import quizApp from "../assets/quiz.png";
-import maxstores from "../assets/max-stores.jpg";
+import stockifyImg from "../assets/Stockify.png";
 import qr from "../assets/qr.png";
 import visionedge from "../assets/visionedge.png";
 import taskflow from "../assets/taskflow.png";
@@ -8,6 +8,31 @@ import taskflow from "../assets/taskflow.png";
 const projectsData = [
     {
         id: 1,
+        imgUrl: stockifyImg,
+        imgAltText: "Stockify App Image",
+        title: "Stockify App",
+        description: "Stockify is an inventory management & profit-tracking web app built for importers and retailers. It helps businesses manage batches, products, expenses, and sales.",
+        tools: ["React", "Tailwind CSS", "Zustand", "Framer Motion", "ChartJS", "Node", "Express.JS", "MongoDB"],
+        liveUrl: "",
+        codeUrl: "https://github.com/Chiemezie-Uchenwoke/stockify-frontend",
+        isLive: false,
+        features: [
+            "User authentication",
+            "Password recovery",
+            "Add import / retail batches",
+            "Add products by batch",
+            "Edit batches and products",
+            "Filter batches and products",
+            "Record sales",
+            "View sales by batch",
+            "Add expense batches (shipping, logistics, customs, etc.)",
+            "View expenses by batch",
+            "Light / dark theme",
+            "And lots more."
+        ]
+    },
+    {
+        id: 2,
         imgUrl: spendwise,
         imgAltText: "SpendWise App Image",
         title: "SpendWise App",
@@ -27,7 +52,7 @@ const projectsData = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         imgUrl: taskflow,
         imgAltText: "Taskflow Image",
         title: "Taskflow",
@@ -46,7 +71,7 @@ const projectsData = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         imgUrl: quizApp,
         imgAltText: "JavaScript Quiz App Image",
         title: "Interactive Quiz App",
@@ -60,24 +85,6 @@ const projectsData = [
             "Responsive Design: Built with modern CSS techniques to ensure a great user experience on all devices."
         ]
 
-    },
-    {
-        id: 4,
-        imgUrl: maxstores,
-        imgAltText: "Max-Stores Ecommerce App Image",
-        title: "Max-Stores",
-        description: "Max-Stores is a modern e-commerce web app built with React, featuring dynamic product listings, a shopping cart, and user authentication with Firebase.",
-        tools: ["React", "CSS", "Firebase"],
-        liveUrl: "https://max-stores.vercel.app/",
-        codeUrl: "https://github.com/Chiemezie-Uchenwoke/max-stores",
-        isLive: true,
-        features: [
-            "Product Display: View a list of available products with details such as name and price",
-            "Add to Cart: Users can seamlessly add products to their cart.",
-            "Responsive Design: The platform adapts to various devices, ensuring a smooth shopping experience.",
-            "Dynamic Updates: Leveraging React's state management to dynamically update the cart.",
-            "User authentication with Firebase"
-        ]
     },
     {
         id: 5,
