@@ -17,18 +17,16 @@ const projectsData = [
         codeUrl: "https://github.com/Chiemezie-Uchenwoke/stockify-frontend",
         isLive: false,
         features: [
-            "User authentication",
+            "Secure user authentication (login, logout, session refresh, protected routes)",
             "Password recovery",
-            "Add import / retail batches",
-            "Add products by batch",
-            "Edit batches and products",
-            "Filter batches and products",
-            "Record sales",
-            "View sales by batch",
-            "Add expense batches (shipping, logistics, customs, etc.)",
-            "View expenses by batch",
-            "Light / dark theme",
-            "And lots more."
+            "Create and manage import/retail batches",
+            "Add and edit products per batch",
+            "Track sales and view sales by batch",
+            "Record expenses (shipping, logistics, customs, etc.)",
+            "View and track expenses by batch",
+            "Filter and sort batches/products",
+            "Interactive dashboards and data visualizations",
+            "Light and dark theme modes"
         ]
     },
     {
