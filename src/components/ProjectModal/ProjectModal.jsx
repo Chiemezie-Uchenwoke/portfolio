@@ -53,9 +53,9 @@ const ProjectModal = ({project, onClose}) => {
                         <h3 className="text-base lg:text-lg text-white-shade font-medium">Tech Stack</h3>
                         <p className="flex gap-4 flex-wrap">
                             {
-                                tools.map((s, i) => {
+                                tools.map((s) => {
                                     return (
-                                        <span key={i} className="bg-white-shade/60 text-main-dark-bg whitespace-nowrap py-1 px-3 rounded-xl font-medium text-xs">
+                                        <span key={s} className="bg-white-shade/60 text-main-dark-bg whitespace-nowrap py-1 px-3 rounded-xl font-medium text-xs">
                                             {s}
                                         </span>
                                     );
