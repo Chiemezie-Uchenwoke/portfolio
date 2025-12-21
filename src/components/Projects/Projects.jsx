@@ -20,7 +20,7 @@ const Projects = () => {
                     subtitle="A showcase of my recent work and creative solutions"
                 />
 
-                <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 h-auto">
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 ">
                     {
                         projectsData.map(project => {
                             return (
