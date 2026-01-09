@@ -39,7 +39,7 @@ const AboutMe = () => {
                 <h2 className="capitalize text-white-shade font-bold sm:text-lg lg:text-xl">about me</h2>
                 <div className="text-white-shade/60 text-sm min-[900px]:text-base flex flex-col gap-5">
                     <p className="leading-7">
-                        I am a Fullstack Developer skilled in building clean, responsive and user-centered web applications using technologies like React, Tailwind CSS, Node.js and Express. 
+                        I am a Fullstack Web Developer skilled in building clean, responsive and user-centered web applications using technologies like React, Tailwind CSS, Node.js and Express. 
                     </p>
 
                     <p className="leading-7">

@@ -27,7 +27,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
             >
-                Fullstack Developer skilled in building modern & responsive web solutions that delivers value and enhance user experience. I help businesses and organizations bring their ideas to life through innovative design and development.
+                Software Developer skilled in building modern & responsive web solutions that delivers value and enhance user experience. I help businesses and organizations bring their ideas to life through innovative design and development.
             </motion.p>
 
             <div className="px-4 w-full flex flex-col min-[450px]:flex-row min-[450px]:justify-center gap-4 sm:gap-6 mt-2">
