@@ -49,8 +49,7 @@ const AboutMe = () => {
                     {/* Recent Achievement */}
                     <div className="bg-pri-blue/10 border border-pri-blue/30 rounded-lg p-4">
                         <p className="text-white-shade/80 leading-7">
-                            <span className="text-pri-blue font-semibold">Recent Project:</span> Delivered <span className="font-semibold">MekRecords</span>, 
-                            a complete inventory management system that handles daily sales tracking, batch management, and automated reporting. The system is currently in production and being used daily.
+                            <span className="text-pri-blue font-semibold">Recent Project:</span> Built and delivered <span className="font-semibold">MekRecords</span>, a complete inventory management system currently serving a retail business. The system replaced manual paper records with real-time digital tracking for sales, inventory, and reporting.
                         </p>
                     </div>
 
@@ -75,8 +74,7 @@ const AboutMe = () => {
                         <h3 className="text-white-shade font-semibold mb-3">My Approach:</h3>
                         <div className="space-y-3">
                             <p className="leading-7">
-                                <span className="text-white-shade">Security First:</span> I implement proper authentication 
-                                (JWT with refresh tokens), role-based access control, and encrypted password storage in every 
+                                <span className="text-white-shade">Security First:</span> I implement proper authentication (JWT with refresh tokens), role-based access control, and encrypted password storage in every 
                                 project requiring user management.
                             </p>
                             <p className="leading-7">
@@ -94,7 +92,7 @@ const AboutMe = () => {
                     <div>
                         <h3 className="text-white-shade font-semibold mb-3">Beyond Coding:</h3>
                         <p className="leading-7">
-                            I'm also a <span className="text-white-shade">technical instructor</span>. I teach fullstack development at Turing Tech LLC, where I've trained over 50 students across multiple cohorts. Teaching has made me better at explaining complex concepts in simple terms — which helps when working with clients or team members.
+                            I'm also a <span className="text-white-shade">technical instructor</span>. I teach fullstack development at Turing Tech LLC, where I've trained over 50 students across multiple cohorts. Teaching has made me better at explaining complex concepts in simple terms which helps when working with clients or team members.
                         </p>
                     </div>
 
