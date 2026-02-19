@@ -1,4 +1,5 @@
-const SkillsCard = ({ icon: Icon, skillName, index }) => {
+const SkillsCard = ({ icon, skillName}) => {
+    const Icon = icon;
     return (
         <div
             className="bg-pri-blue/20 hover:bg-pri-blue/35 duration-300 py-6 rounded-lg flex flex-col items-center gap-4 border border-white-shade/10 shadow-xl shadow-white-shade/3"

@@ -8,6 +8,7 @@ const AboutMe = () => {
         <div 
             className="container flex flex-col md:flex-row gap-8 mt-8 min-h-[calc(75vh-4rem)]"
         >
+            {/* Sidebar Card */}
             <div className="border border-white-shade/15 rounded-lg w-full md:w-[17rem] flex flex-col items-center gap-3.5 py-6 px-4 h-fit">
                 <div className="w-48 h-48 rounded-full overflow-hidden bg-dark-gray/10">
                     <img 
@@ -21,9 +22,9 @@ const AboutMe = () => {
                     <CiUser /> Chiemezie Uchenwoke
                 </h4>
 
-                   <p className="text-white-shade/60 text-sm">
-                       I specialize in creating modern, responsive applications that deliver exceptional user experiences.
-                   </p>
+                <p className="text-white-shade/60 text-sm">
+                    Fullstack Developer building production-ready applications that solve real business problems.
+                </p>
 
                 <a 
                     href="mailto:uchenwoke.chiemezie@gmail.com?subject=Project%20Inquiry" 
@@ -35,40 +36,77 @@ const AboutMe = () => {
                 </a>
             </div>
 
+            {/* Main Content */}
             <div className="w-full md:w-[calc(100%-17rem)] h-auto overflow-auto flex flex-col gap-6 border border-white-shade/15 rounded-lg py-6 px-4 lg:px-6">
                 <h2 className="capitalize text-white-shade font-bold sm:text-lg lg:text-xl">about me</h2>
+                
                 <div className="text-white-shade/60 text-sm min-[900px]:text-base flex flex-col gap-5">
+                    {/* Who I Am */}
                     <p className="leading-7">
-                        I am a Fullstack Web Developer skilled in building clean, responsive and user-centered web applications using technologies like React, Tailwind CSS, Node.js and Express. 
+                        I'm Chiemezie Uchenwoke, a <span className="text-white-shade font-semibold">Fullstack Developer with 3+ years of experience</span> building web applications that people actually use. I design and develop complete solutions from user interface to database, handling authentication, APIs, and deployment.
                     </p>
 
+                    {/* Recent Achievement */}
+                    <div className="bg-pri-blue/10 border border-pri-blue/30 rounded-lg p-4">
+                        <p className="text-white-shade/80 leading-7">
+                            <span className="text-pri-blue font-semibold">Recent Project:</span> Delivered <span className="font-semibold">MekRecords</span>, 
+                            a complete inventory management system that handles daily sales tracking, batch management, and automated reporting. The system is currently in production and being used daily.
+                        </p>
+                    </div>
+
+                    {/* What I Do */}
+                    <div>
+                        <h3 className="text-white-shade font-semibold mb-3">What I Do:</h3>
+                        <p className="leading-7">
+                            I build complete web solutions focusing on four key areas:
+                        </p>
+                        <ul className="list-inside flex flex-col gap-2 mt-3">
+                            {backendSkillsData.map((skill) => (
+                                <BackendSkillsItem 
+                                    key={skill.id}
+                                    {...skill}
+                                />
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* My Approach */}
+                    <div>
+                        <h3 className="text-white-shade font-semibold mb-3">My Approach:</h3>
+                        <div className="space-y-3">
+                            <p className="leading-7">
+                                <span className="text-white-shade">Security First:</span> I implement proper authentication 
+                                (JWT with refresh tokens), role-based access control, and encrypted password storage in every 
+                                project requiring user management.
+                            </p>
+                            <p className="leading-7">
+                                <span className="text-white-shade">User-Centered Design:</span> I build interfaces that work 
+                                on any device, with clear navigation, and responsive layouts.
+                            </p>
+                            <p className="leading-7">
+                                <span className="text-white-shade">Real-World Solutions:</span> I focus on creating features 
+                                that solve actual business problems, not just showcasing technical skills.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Teaching Experience */}
+                    <div>
+                        <h3 className="text-white-shade font-semibold mb-3">Beyond Coding:</h3>
+                        <p className="leading-7">
+                            I'm also a <span className="text-white-shade">technical instructor</span>. I teach fullstack development at Turing Tech LLC, where I've trained over 50 students across multiple cohorts. Teaching has made me better at explaining complex concepts in simple terms — which helps when working with clients or team members.
+                        </p>
+                    </div>
+
+                    {/* Currently Learning */}
                     <p className="leading-7">
-                        My journey into development has been shaped by consistent learning, curiosity, and a drive for excellence. I began with frontend development, building interfaces that focus on clarity, simplicity, and great user experience. Over time, I expanded into the backend, developing skills in:
+                        I'm actively learning automated testing (Jest), containerization (Docker), and cloud infrastructure (AWS) to further strengthen my deployment and DevOps capabilities.
                     </p>
 
-                    <ul className="list-inside flex flex-col gap-2">
-                        {
-                            backendSkillsData.map((skill) => {
-                                return (
-                                    <BackendSkillsItem 
-                                        key={skill.id}
-                                        {...skill}
-                                    />
-                                )
-                            })
-                        }
-                    </ul>
-
+                    {/* Goal */}
                     <p className="leading-7">
-                        Right now, I'm deepening my expertise in backend engineering, working with MongoDB and PostgreSQL, optimizing schemas, writing queries, and building secure, maintainable APIs. I enjoy applying what I learn directly into projects and solving real world problems. 
-                    </p>
-
-                    <p className="leading-7">
-                        Beyond technical skills, I am deeply passionate about mentorship and knowledge-sharing. I believe in fostering collaborative environments and am committed to continuous growth, both as a developer and a professional.
-                    </p>
-
-                    <p className="leading-7">
-                        My goal is to build meaningful and robust products, grow continously and contribute positively wherever i find myself.
+                        I'm seeking opportunities to work on challenging projects with collaborative teams where I can 
+                        contribute my fullstack expertise while continuing to grow as a developer.
                     </p>
                 </div>
 

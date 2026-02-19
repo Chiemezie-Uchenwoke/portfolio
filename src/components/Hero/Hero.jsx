@@ -27,7 +27,10 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
             >
-                Fullstack Developer skilled in building modern & responsive web solutions that delivers value and enhance user experience. I help businesses and organizations bring their ideas to life through innovative design and development.
+                I build production-ready web applications that solve real business problems. 
+                Recently delivered <span className="text-pri-blue font-semibold">MekRecords</span>, a 
+                complete inventory management system replacing 
+                manual paper records with real-time digital tracking.
             </motion.p>
 
             <div className="px-4 w-full flex flex-col min-[450px]:flex-row min-[450px]:justify-center gap-4 sm:gap-6 mt-2">

@@ -13,19 +13,19 @@ const servicesData = [
         id: 2,
         icon: FaCode,
         title: "frontend development",
-        description: "I specialize in creating responsive, interactive user interfaces with React, Tailwind CSS and JavaScript."
+        description: "I create clean, responsive user interfaces with React and Tailwind CSS that work smoothly across devices."
     },
     {
         id: 3,
         icon: FaServer,
         title: "Backend development",
-        description: "Building scalable APIs, databases, and server-side applications with Node.js and Express"
+        description: "I develop REST APIs, authentication systems, and databases using Node.js, Express, and MongoDB."
     },
     {
         id: 4,
         icon: FaChalkboardTeacher,
         title: "Mentoring",
-        description: "1-on-1 coaching and guidance for developers looking to advance their knowledge on HTML, CSS and JavaScript."
+        description: "I provide 1-on-1 mentorship on fullstack development: HTML, CSS, JavaScript, React and Node.js."
     },
 ];
 
