@@ -1,5 +1,5 @@
 import spendwise from "../assets/spendwise.png";
-import quizApp from "../assets/quiz.png";
+import mekrecords from "../assets/mekrecords.png";
 import stockifyImg from "../assets/Stockify.png";
 import qr from "../assets/qr.png";
 import visionedge from "../assets/visionedge.png";
@@ -8,6 +8,26 @@ import taskflow from "../assets/taskflow.png";
 const projectsData = [
     {
         id: 1,
+        imgUrl: mekrecords,
+        imgAltText: "MekRecords Inventory Management System",
+        title: "MekRecords",
+        description: "A complete inventory and sales management system for a retail business, replacing manual paper records with real-time digital tracking.",
+        tools: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        liveUrl: "",
+        codeUrl: "",
+        isLive: false,
+        features: [
+            "Multi-item transaction system with batch tracking and profit calculation",
+            "Role-based access control (Admin/Staff) with JWT authentication",
+            "Real-time sales dashboard with MongoDB aggregation pipelines",
+            "Automated PDF receipt generation for thermal printers",
+            "CSV/PDF report exports with date range filtering",
+            "Responsive mobile-first design with dark mode support"
+        ]
+
+    },
+    {
+        id: 2,
         imgUrl: stockifyImg,
         imgAltText: "Stockify App Image",
         title: "Stockify App",
@@ -27,26 +47,6 @@ const projectsData = [
             "Filter and sort batches/products",
             "Interactive dashboards and data visualizations",
             "Light and dark theme modes"
-        ]
-    },
-    {
-        id: 2,
-        imgUrl: spendwise,
-        imgAltText: "SpendWise App Image",
-        title: "SpendWise App",
-        description: "SpendWise is a modern finance tracking web application that helps users manage their personal finances with ease.",
-        tools: ["React", "Tailwind CSS", "Node.JS", "Express.JS", "MongoDB"],
-        liveUrl: "https://spendwise-nu.vercel.app/",
-        codeUrl: "https://github.com/Chiemezie-Uchenwoke/spendwise",
-        isLive: true,
-        features: [
-            "User authentication",
-            "Add, edit, delete transactions",
-            "filter transactions by date and category",
-            "Secure backend APIs with Node and Express",
-            "Responsive UI using React and Tailwind CSS",
-            "File uploads using Multer",
-            "MongoDB database for persistence"
         ]
     },
     {
@@ -70,19 +70,23 @@ const projectsData = [
     },
     {
         id: 4,
-        imgUrl: quizApp,
-        imgAltText: "JavaScript Quiz App Image",
-        title: "Interactive Quiz App",
-        description: "An interactive Quiz App designed to provide an engaging experience for users by dynamically loading questions.",
-        tools: ["JavaScript", "CSS", "HTML"],
-        liveUrl: "https://quizlisphere.vercel.app/",
-        codeUrl: "https://github.com/Chiemezie-Uchenwoke/quiz-app",
+        imgUrl: spendwise,
+        imgAltText: "SpendWise App Image",
+        title: "SpendWise App",
+        description: "SpendWise is a modern finance tracking web application that helps users manage their personal finances with ease.",
+        tools: ["React", "Tailwind CSS", "Node.JS", "Express.JS", "MongoDB"],
+        liveUrl: "https://spendwise-nu.vercel.app/",
+        codeUrl: "https://github.com/Chiemezie-Uchenwoke/spendwise",
         isLive: true,
         features: [
-            "Dynamic Question Loading: Questions and answers are dynamically updated using JavaScript.",
-            "Responsive Design: Built with modern CSS techniques to ensure a great user experience on all devices."
+            "User authentication",
+            "Add, edit, delete transactions",
+            "filter transactions by date and category",
+            "Secure backend APIs with Node and Express",
+            "Responsive UI using React and Tailwind CSS",
+            "File uploads using Multer",
+            "MongoDB database for persistence"
         ]
-
     },
     {
         id: 5,
