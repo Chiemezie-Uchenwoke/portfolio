@@ -43,7 +43,7 @@ const AboutMe = () => {
                 <div className="text-white-shade/60 text-sm min-[900px]:text-base flex flex-col gap-5">
                     {/* Who I Am */}
                     <p className="leading-7">
-                        I'm Chiemezie Uchenwoke, a <span className="text-white-shade font-semibold">Fullstack Developer with 3+ years of experience</span> building web applications that people actually use. I design and develop complete solutions from user interface to database, handling authentication, APIs, and deployment.
+                        I'm Chiemezie Uchenwoke, a <span className="text-white-shade font-semibold">Fullstack Developer</span> who builds scalable and user-focused web applications that people actually use. I design and develop complete solutions from user interface to database, handling authentication, APIs, and deployment.
                     </p>
 
                     {/* Recent Achievement */}
