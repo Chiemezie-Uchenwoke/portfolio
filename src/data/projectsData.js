@@ -1,7 +1,7 @@
 import spendwise from "../assets/spendwise.png";
 import mekrecords from "../assets/mekrecords.png";
 import stockifyImg from "../assets/Stockify.png";
-import qr from "../assets/qr.png";
+import sillageLab from "../assets/The_Sillage_Lab.png";
 import visionedge from "../assets/visionedge.png";
 import taskflow from "../assets/taskflow.png";
 
@@ -28,6 +28,31 @@ const projectsData = [
     },
     {
         id: 2,
+        imgUrl: sillageLab, 
+        imgAltText: "The Sillage Lab - Luxury Experiential Perfume Bar Website",
+        title: "The Sillage Lab",
+        description: "The Sillage Lab is Arizona's first luxury mobile Perfume Bar offering bespoke fragrance experiences for Weddings, Parties, and Curated Events.",
+        tools: [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS v4",
+            "Framer Motion",
+            "Web3Forms",
+            "Vercel"
+        ],
+        liveUrl: "https://www.thesillagelab.co",
+        codeUrl: "",
+        isLive: true,
+        features: [
+            "Six fully responsive pages with mobile-first design approach",
+            "Cinematic hero carousel with smooth Framer Motion animations",
+            "Inquiry form with Web3Forms integration delivering submissions directly to client inbox",
+            "SEO optimised with metadata, Open Graph tags and sitemap submission",
+            "Google Analytics integration for visitor tracking and insights",
+        ]
+    },
+    {
+        id: 3,
         imgUrl: stockifyImg,
         imgAltText: "Stockify App Image",
         title: "Stockify App",
@@ -50,7 +75,7 @@ const projectsData = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         imgUrl: taskflow,
         imgAltText: "Taskflow Image",
         title: "Taskflow",
@@ -69,7 +94,7 @@ const projectsData = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         imgUrl: spendwise,
         imgAltText: "SpendWise App Image",
         title: "SpendWise App",
@@ -86,22 +111,6 @@ const projectsData = [
             "Responsive UI using React and Tailwind CSS",
             "File uploads using Multer",
             "MongoDB database for persistence"
-        ]
-    },
-    {
-        id: 5,
-        imgUrl: qr,
-        imgAltText: "QR Code Generator Image",
-        title: "QR Code Generator",
-        description: "A simple yet powerful web application built with Node and Express. It allows users to generate QR codes for websites and phone numbers effortlessly.",
-        tools: ["Node.JS", "Express.JS", "JavaScript", "CSS", "HTML"],
-        liveUrl: "https://qr-code-generator-six-omega.vercel.app/",
-        codeUrl: "https://github.com/Chiemezie-Uchenwoke/qrcodegenerator",
-        isLive: true,
-        features: [
-            "Generate QR codes for URLs and phone numbers",
-            "Download and save QR codes as images",
-            "Clean and responsive user interface"
         ]
     },
     {
