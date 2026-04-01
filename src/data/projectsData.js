@@ -35,7 +35,7 @@ const projectsData = [
         tools: [
             "Next.js",
             "TypeScript",
-            "Tailwind CSS v4",
+            "Tailwind CSS",
             "Framer Motion",
             "Web3Forms",
             "Vercel"
