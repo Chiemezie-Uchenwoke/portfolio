@@ -23,8 +23,8 @@ const projectsData = [
             "Automated PDF receipt generation for thermal printers",
             "CSV/PDF report exports with date range filtering",
             "Responsive mobile-first design with dark mode support"
-        ]
-
+        ], 
+        note: "Private Project"
     },
     {
         id: 2,

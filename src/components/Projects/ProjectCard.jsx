@@ -1,7 +1,7 @@
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import { FaGithub, FaHourglassHalf } from "react-icons/fa";
 
-const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, codeUrl, isLive, onClick}) => {
+const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, codeUrl, isLive, onClick, note}) => {
     return (
         <div 
             className="rounded-lg overflow-hidden min-h-80 bg-dark-bg flex flex-col border border-white-shade/10 hover:border-pri-blue hover:scale-103 duration-200 ease-in-out cursor-pointer" 
@@ -61,7 +61,10 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                                 code 
                             </a>
                         </> : 
-                            <span className="text-pri-blue font-bold flex items-center gap-2"><FaHourglassHalf /> Coming Soon</span>
+                        note ? 
+                        <p className="text-pri-blue font-bold">{note}</p> :
+                        <span className="text-pri-blue font-bold flex items-center gap-2"><FaHourglassHalf /> Coming Soon</span> 
+                            
                     }
                 </div>
             </div>
