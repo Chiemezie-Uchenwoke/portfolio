@@ -26,7 +26,7 @@ const ProjectModal = ({project, onClose}) => {
 
     if (!project) return null;
 
-    const {title, description, tools, features} = project;
+    const {title, description, tools, features, note, videoUrl} = project;
 
     return (
         <div className="fixed top-0 left-0 z-[70] bg-dark-bg/80 flex justify-center items-center w-full h-screen shadow-2xl shadow-white-shade/10 backdrop-blur-sm">
@@ -44,6 +44,20 @@ const ProjectModal = ({project, onClose}) => {
                     <h2 className="text-white font-bold capitalize text-lg lg:text-xl ">
                         {title}
                     </h2>
+
+                    {/* Video Demo - only for private projects */}
+                    {note && videoUrl && (
+                    <div className="flex flex-col gap-4">
+                        <video
+                        src={videoUrl}
+                        controls
+                        className="w-full rounded-lg border border-white-shade/10"
+                        preload="metadata"
+                        >
+                        Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    )}
 
                     <p className="text-white-shade/60 text-sm lg:text-base">
                         {description}

@@ -1,6 +1,6 @@
 import spendwise from "../assets/spendwise.png";
 import mekrecords from "../assets/mekrecords.png";
-import stockifyImg from "../assets/Stockify.png";
+import gozyResources from "../assets/gozy-resources.png";
 import sillageLab from "../assets/The_Sillage_Lab.png";
 import visionedge from "../assets/visionedge.png";
 import taskflow from "../assets/taskflow.png";
@@ -24,10 +24,33 @@ const projectsData = [
             "CSV/PDF report exports with date range filtering",
             "Responsive mobile-first design with dark mode support"
         ], 
-        note: "Private Project"
+        note: "Private Client Project",
+        videoUrl: "https://res.cloudinary.com/dmx1ew545/video/upload/v1776341805/Mekrecords_kuqpfr.mp4"
     },
     {
         id: 2,
+        imgUrl: gozyResources, 
+        imgAltText: "GozyResources Inventory Management System",
+        title: "GozyResources",
+        description: "A production inventory and sales management system for a retail business. Handles multi-branch operations, batch stock tracking and partial payment management.",
+        tools: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        liveUrl: "",
+        codeUrl: "",
+        isLive: false,
+        features: [
+            "Batch inventory tracking with supplier name, product colour and stock levels",
+            "Partial payment tracking with outstanding balance visibility and payment history",
+            "Multi-branch sales recording across Head Office and Branch Office",
+            "Role-based access control (Admin/Staff) with JWT authentication",
+            "Thermal receipt generation showing amount paid and balance due",
+            "CSV/PDF report exports with payment status columns",
+            "Dashboard with real-time sales, profit and outstanding balance overview"
+        ],
+        note: "Private Client Project",
+        videoUrl: "https://res.cloudinary.com/dmx1ew545/video/upload/v1776341810/Gozy_Resources_etkbl2.mp4"
+    },
+    {
+        id: 3,
         imgUrl: sillageLab, 
         imgAltText: "The Sillage Lab - Luxury Experiential Perfume Bar Website",
         title: "The Sillage Lab",
@@ -49,29 +72,6 @@ const projectsData = [
             "Inquiry form with Web3Forms integration delivering submissions directly to client inbox",
             "SEO optimised with metadata, Open Graph tags and sitemap submission",
             "Google Analytics integration for visitor tracking and insights",
-        ]
-    },
-    {
-        id: 3,
-        imgUrl: stockifyImg,
-        imgAltText: "Stockify App Image",
-        title: "Stockify App",
-        description: "Stockify is an inventory management & profit-tracking web app built for importers and retailers. It helps businesses manage batches, products, expenses, and sales.",
-        tools: ["React", "Tailwind CSS", "Zustand", "Framer Motion", "ChartJS", "Node", "Express.JS", "MongoDB"],
-        liveUrl: "",
-        codeUrl: "https://github.com/Chiemezie-Uchenwoke/stockify-frontend",
-        isLive: false,
-        features: [
-            "Secure user authentication (login, logout, session refresh, protected routes)",
-            "Password recovery",
-            "Create and manage import/retail batches",
-            "Add and edit products per batch",
-            "Track sales and view sales by batch",
-            "Record expenses (shipping, logistics, customs, etc.)",
-            "View and track expenses by batch",
-            "Filter and sort batches/products",
-            "Interactive dashboards and data visualizations",
-            "Light and dark theme modes"
         ]
     },
     {
