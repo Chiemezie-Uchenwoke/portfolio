@@ -50,16 +50,18 @@ const ProjectCard = ({imgUrl, imgAltText, title, description, tools, liveUrl, co
                                 Live 
                             </a>
 
-                            <a 
-                                href={codeUrl}
-                                className="text-pri-blue flex items-center gap-2 font-bold cursor-pointer hover:text-blue-500/80 group"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={(e) => e.stopPropagation()}
-                            > 
-                                <FaGithub className="text-pri-blue hover:text-blue-600 duration-200 group-hover:text-blue-500/80" /> 
-                                code 
-                            </a>
+                            {codeUrl && (
+                                <a 
+                                    href={codeUrl}
+                                    className="text-pri-blue flex items-center gap-2 font-bold cursor-pointer hover:text-blue-500/80 group"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
+                                > 
+                                    <FaGithub className="text-pri-blue hover:text-blue-600 duration-200 group-hover:text-blue-500/80" /> 
+                                    code 
+                                </a>
+                            )}
                         </> : 
                         note ? 
                         <p className="text-pri-blue font-bold">{note}</p> :

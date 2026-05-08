@@ -2,7 +2,7 @@ import spendwise from "../assets/spendwise.png";
 import mekrecords from "../assets/mekrecords.png";
 import gozyResources from "../assets/gozy-resources.png";
 import sillageLab from "../assets/The_Sillage_Lab.png";
-import visionedge from "../assets/visionedge.png";
+import idemStudios from "../assets/idem-studios.jpg";
 import taskflow from "../assets/taskflow.png";
 
 const projectsData = [
@@ -76,6 +76,34 @@ const projectsData = [
     },
     {
         id: 4,
+        imgUrl: idemStudios,
+        imgAltText: "Idem Studios - Photography Studio & Creative Space Website",
+        title: "Idem Studios",
+        description: "Idem Studios is a luxury photography studio and creative space in Tempe, Arizona. A home for artists, dreamers, and storytellers.",
+        tools: [
+            "Next.js",
+            "TypeScript",
+            "Tailwind CSS",
+            "Framer Motion",
+            "Web3Forms",
+            "Acuity Scheduling",
+            "Vercel"
+        ],
+        liveUrl: "https://www.idemstudios.com",
+        codeUrl: "",
+        isLive: true,
+        features: [
+            "Seven fully responsive pages with mobile-first design approach",
+            "Scroll-jacking horizontal swipe section with spring animations",
+            "Acuity Scheduling embed for direct studio bookings",
+            "Drag-to-scroll horizontal image gallery with progress bar",
+            "Inquiry form with Web3Forms integration and animated success modal",
+            "SEO optimised with metadata, Open Graph tags and sitemap submission",
+            "Google Analytics integration for visitor tracking and insights",
+        ]
+    },
+    {
+        id: 5,
         imgUrl: taskflow,
         imgAltText: "Taskflow Image",
         title: "Taskflow",
@@ -94,7 +122,7 @@ const projectsData = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         imgUrl: spendwise,
         imgAltText: "SpendWise App Image",
         title: "SpendWise App",
@@ -111,22 +139,6 @@ const projectsData = [
             "Responsive UI using React and Tailwind CSS",
             "File uploads using Multer",
             "MongoDB database for persistence"
-        ]
-    },
-    {
-        id: 6,
-        imgUrl: visionedge,
-        imgAltText: "vision edge Image",
-        title: "vision edge",
-        description: "VisionEdge is a modern and responsive one-page corporate website built with Tailwind CSS and JavaScript.",
-        tools: ["JavaScript", "Tailwind CSS", "HTML"],
-        liveUrl: "https://vision-edge.vercel.app/",
-        codeUrl: "https://github.com/Chiemezie-Uchenwoke/vision_edge",
-        isLive: true,
-        features: [
-            "Responsive design: Optimized for desktops, tablets, and mobile devices",  
-            "Built with Tailwind CSS: Utility-first framework for fast, modern UI development",  
-            "Interactive user interaction"
         ]
     },
 ];
