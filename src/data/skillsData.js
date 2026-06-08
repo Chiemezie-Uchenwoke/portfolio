@@ -62,16 +62,11 @@ const skillData = [
     },
     {
         id: 12,
-        icon: FaDocker,
-        skillName: "Docker"
-    },
-    {
-        id: 13,
         icon: FaHtml5,
         skillName: "HTML"
     },
     {
-        id: 14,
+        id: 13,
         icon: FaCss3Alt,
         skillName: "CSS"
     }
